@@ -13,7 +13,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Some default styles to make each box visible */
 .box {
   color:white;
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
   text-shadow:4px 4px 0 rgba(0,0,0,0.1);
   padding:10px;
@@ -30,11 +30,48 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box8 { background:#bdc3c7;}
 .box9 { background:#2ecc71;}
 .box10 { background:#16a085;}
+.box11 { background:#1abc9c;}
+.box12 { background:#3498db;}
+.box13 { background:#9b59b6;}
+.box14 { background:#34495e;}
+.box15 { background:#f1c40f;}
+.box16 { background:#e67e22;}
+.box17 { background:#e74c3c;}
+.box18 { background:#bdc3c7;}
+.box19 { background:#2ecc71;}
+.box20 { background:#16a085;}
 
 
 /* We start writing out flexbox here. The above is just page setup */
-.container {
+.container1 {
 	display: flex;
 	border: 10px solid goldenrod;
-	height:  100vh;
+	min-height:  10vh;
 }
+
+.container2 {
+	display: flex;
+	border: 10px solid goldenrod;
+	min-height:  10vh;
+	flex-direction: row-reverse;
+}
+
+.container3 {
+	display: flex;
+	border: 10px solid goldenrod;
+	width: 15vh;
+	flex-direction: column;
+	}
+
+.container4 {
+	display: flex;
+	border: 10px solid goldenrod;
+	width:  15vh;
+	flex-direction: column-reverse;
+}
+
+.blankSpace {
+	background: #fff;
+	height: 1vh;
+}
+
