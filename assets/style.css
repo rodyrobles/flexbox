@@ -42,61 +42,27 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box18 { background:#bdc3c7;}
 .box19 { background:#2ecc71;}
 .box20 { background:#16a085;}
-.box21 { background:#1abc9c;}
-.box22 { background:#3498db;}
-.box23 { background:#9b59b6;}
-.box24 { background:#34495e;}
-.box25 { background:#f1c40f;}
-.box26 { background:#e67e22;}
-.box27 { background:#e74c3c;}
-.box28 { background:#bdc3c7;}
-.box29 { background:#2ecc71;}
-.box30 { background:#16a085;}
-.box31 { background:#1abc9c;}
-.box32 { background:#3498db;}
-.box33 { background:#9b59b6;}
-.box34 { background:#34495e;}
-.box35 { background:#f1c40f;}
-.box36 { background:#e67e22;}
-.box37 { background:#e74c3c;}
-.box38 { background:#bdc3c7;}
-.box39 { background:#2ecc71;}
-.box40 { background:#16a085;}
-
 
 
 /* We start writing out flexbox here. The above is just page setup */
-.container1 {
-	display: flex;
-	border: 10px solid goldenrod;
-	height:  50vh;
-	flex-wrap: wrap; /* show the real size of the boxes */
+
+div[class^='container'] {
+	display:  flex;
 }
 
-.container2 {
-	display: flex;
-	border: 10px solid goldenrod;
-	height:  50vh;
-	flex-direction: row-reverse;
-	flex-wrap: wrap-reverse; 
+
+.container1 .box {
+	flex: 1;
 }
 
-.container3 {
-	display: flex;
-	border: 10px solid goldenrod;
-	height:  50vh;
-	flex-direction: column;
-	flex-wrap: wrap;
-	}
 
-.container4 {
-	display: flex;
-	border: 10px solid goldenrod;
-	height:  50vh;
-	flex-direction: column-reverse;
-	flex-wrap: wrap-reverse;
-	}
+.container2 .box15 {
+	order: 2;	
+}
 
+.container2 .box20 {
+	order: -1;	
+}
 
 .blankSpace {
 	background: #fff;
