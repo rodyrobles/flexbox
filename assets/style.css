@@ -42,43 +42,53 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box18 { background:#bdc3c7;}
 .box19 { background:#2ecc71;}
 .box20 { background:#16a085;}
-
+.box21 { background:#1abc9c;}
 
 /* We start writing out flexbox here. The above is just page setup */
 
 div[class^='container'] {
 	display:  flex;
 	border:  2px solid deeppink;
+	min-height: 15vh;
 }
 
 .container1 {
-	/* justify-content: flex-start; default*/
-	justify-content: flex-end
+	align-items: flex-start;
 }
 
 .container2 {
-	flex-direction: row-reverse;
-	justify-content: flex-end;
+	align-items: center;
 }
 
 .container3 {
-	justify-content: center;
+	align-items: flex-end;
 }
 
 .container4 {
-	justify-content: space-between;
+	align-items: baseline;
+}
+
+.box11 {
+	font-size: 40px;
+}
+
+.box12 {
+	font-size: 50px;
 }
 
 .container5 {
-	justify-content: space-around;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .container6 {
-	border:  2px solid dodgerblue;
-	flex-direction: column-reverse;
-	min-height: 55vh;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
 
+.container7 {
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .blankSpace {
